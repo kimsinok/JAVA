@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 
 class Lotto {
-    // 로또 번호
+        // 로또 번호
 	private int[] lottonums = new int[6];
 	// 사용자가 입력한 로또 번호
 	private int[] userLotto = new int[6];
@@ -16,7 +16,7 @@ class Lotto {
 		return lottonums;
 	}
 
-    // 로또 번호를 생성하다.
+        // 로또 번호를 생성하다.
 	public void createLottoNumbers() {
 		for (int i = 0; i < lottonums.length; i++) {
 			lottonums[i] = (int) (Math.random() * 45) + 1;
