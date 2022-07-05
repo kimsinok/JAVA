@@ -1,4 +1,6 @@
-package testApp;
+/*
+* 학생정보를 구현한 클래스 
+*/
 
 public class Student {
 
@@ -11,11 +13,15 @@ public class Student {
 	private int total;
 	private double avg;
 	private int rank;
+	
+	// 디폴트 생성자 메소드
 
 	public Student() {
 		super();
 		this.rank = 1;
 	}
+	
+	// 매개변수 생성자 메소드
 
 	public Student(int no, String name, int kor, int eng, int math) {
 		super();
