@@ -1,4 +1,3 @@
-package testApp;
 
 import java.util.Scanner;
 
@@ -76,15 +75,15 @@ public class StudentScoreApp {
 		
 		do {
 
-			System.out.println("�꽦�쟻 寃��깋");
-			System.out.println("1. 踰덊샇");
-			System.out.println("2. �씠由�");
-			System.out.println("3. 醫낅즺");
-			System.out.print("�빆紐⑹쓣 �꽑�깮�븯�꽭�슂 ");
+			System.out.println("학생성적검색");
+			System.out.println("1. 번호");
+			System.out.println("2. 이름");
+			System.out.println("3. 종료");
+			System.out.print("검색하고자 하는 항목을 선택하세요 ");
 			int item = Integer.parseInt(scan.nextLine());	
 			
 			if (item == 1) {
-				System.out.print("踰덊샇 : ");
+				System.out.print("번호 : ");
 				int no = Integer.parseInt(scan.nextLine());	
 				Student s = findStudentByNo(no);
 				if (s == null) {
@@ -93,7 +92,7 @@ public class StudentScoreApp {
 				s.printStudent();
 				
 			} else if (item == 2) {
-				System.out.print("�씠由� : ");
+				System.out.print("이름 : ");
 				String name = scan.nextLine();				
 				findStudentByName(name);				
 						
